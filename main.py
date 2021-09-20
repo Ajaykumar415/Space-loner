@@ -1,11 +1,11 @@
 import pygame
 import random
-import Classes
-import GameConfig
+import characters.Classes as Classes
+import settings.GameConfig as GameConfig
 from os import unlink
 
 pygame.init()
-icon = pygame.image.load('icon.png')
+icon = pygame.image.load(str(GameConfig.ASSETS_DIR / 'pictures' /'icon.png'))
 pygame.display.set_icon(icon)
 
 # the fonts that pygame offers
